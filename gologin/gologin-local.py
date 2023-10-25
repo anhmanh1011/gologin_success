@@ -6,8 +6,8 @@ from gologin import GoLogin
 
 
 gl = GoLogin({
-	"token": "yU0token",
-	"profile_id": "yU0Pr0f1leiD",
+	"token": "ayJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NTM3M2UwMGZlNzJmY2NiMmVkMDdjZTUiLCJ0eXBlIjoiZGV2Iiwiand0aWQiOiI2NTM4YjcyZjBiMjRlM2QzZDg5ZmVmODkifQ.5XMmSpMWD0i2ieH5HFzIZ6aY9fkYv6Ph1xaXsXfHC18",
+	"profile_id": "test_profile",
 	"local": True,
 	"credentials_enable_service": False,
 	})
@@ -22,7 +22,7 @@ elif platform == "win32":
 debugger_address = gl.start()
 chrome_options = Options()
 chrome_options.add_experimental_option("debuggerAddress", debugger_address)
-driver = webdriver.Chrome(executable_path=chrome_driver_path, options=chrome_options)
+driver = webdriver.Chrome(options=chrome_options)
 driver.get("http://www.python.org")
 assert "Python" in driver.title
 driver.quit()

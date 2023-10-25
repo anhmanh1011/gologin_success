@@ -16,7 +16,7 @@ if platform == "linux" or platform == "linux2":
 elif platform == "darwin":
 	chrome_driver_path = "./mac/chromedriver"
 elif platform == "win32":
-	chrome_driver_path = "chromedriver.exe"
+	chrome_driver_path = r"chromedriver.exe"
 
 debugger_address = gl.start()
 chrome_options = Options()
