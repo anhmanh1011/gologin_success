@@ -6,7 +6,7 @@ gl = GoLogin({
 	})
 
 profile_id = gl.create({
-    "name": 'test_profile',
+    "name": 'test_123',
     "os": 'win',
     "navigator": {
         "language": 'en-US',
